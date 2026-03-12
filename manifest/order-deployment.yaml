@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: order
-        image: <dockerhub-user>/order-service:v1
+        image: muralidhar1994/order-service:v1
         ports:
         - containerPort: 5000
