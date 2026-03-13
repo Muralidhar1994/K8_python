@@ -3,6 +3,10 @@ import requests
 
 app = Flask(__name__)
 
+# Read configuration from environment variables
+PAYMENT_URL = os.getenv("PAYMENT_URL")
+LOG_LEVEL = os.getenv("LOG_LEVEL")
+
 @app.route("/order")
 def order():
 
