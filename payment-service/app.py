@@ -1,6 +1,8 @@
 from flask import Flask, request, jsonify
-
+import os
 app = Flask(__name__)
+
+DB_PASSWORD = os.getenv("DB_PASSWORD")
 
 @app.route("/pay", methods=["POST"])
 def pay():
